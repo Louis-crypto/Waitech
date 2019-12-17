@@ -1,4 +1,82 @@
-#pic-menu-beverage{
-	position: relative;
-	width: 5200px;
+*{
+	padding: 0px;
+	 margin: 0px;
+	box-sizing: border-box;
 }
+/*#pic-menu-beverage{
+	display: flex;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	
+}*/
+.carousel-container{
+	width: 200%;
+	margin: auto;
+	border:5px solid black;
+}
+.carousel-slide{
+	display: flex;
+}
+
+	
+	
+ 
+/*@keyframes slider{
+	0%
+	{
+		left:0px;
+	}
+	20%
+	{
+		left:0px;
+	}
+	25%
+	{
+		left:-800px;
+	}
+	30%
+	{
+		left:-800px;
+	}
+	35%
+	{
+		left:-800px;
+	}
+	40%
+	{
+		left:-800px;
+	}
+	45%
+	{
+		left:-800px;
+	}
+	50%
+	{
+		left:-800px;
+	}
+	55%
+	{
+		left:-800px;
+	}
+	60%
+	{
+		left:-800px;
+	}
+	65%
+	{
+		left:-800px;
+	}
+	85%
+	{
+		left:-800px;
+	}
+	95%
+	{
+		left:-800px;
+	}
+	100%
+	{
+		left:-800px;
+	}
+}*/

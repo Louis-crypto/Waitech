@@ -8,6 +8,9 @@
 #more1, #more2, #more3{
   display: none;
 }
+#lessText1, #lessText2, #lessText3{
+  display: none;
+}
 #service{
   border-radius: 90%;
 }

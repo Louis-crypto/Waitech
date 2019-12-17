@@ -1,0 +1,23 @@
+/* about section styling */
+#hotelView{
+  border-radius: 90%;
+}
+#service{
+  border-radius: 90%;
+}
+#staff{
+  border-radius: 90%;
+}
+/* contacts section styling */
+.icon-bar {
+  bottom: 5px;
+}
+
+.icon-bar a {
+  display: inline;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}

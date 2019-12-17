@@ -40,4 +40,9 @@ $(document).ready(function () {
     $("#moreText3").show();
   });
 
+  $("#submit").on("click", function () {
+    var userName = document.getElementById("name").value;
+    alert(userName + " " + "we have received your message, thank you for your feedback");
+  });
+
 });

@@ -8,8 +8,14 @@
 #more1, #more2, #more3{
   display: none;
 }
+#moreText1, #moreText2, #moreText3{
+  border: none;
+  color: blue;
+}
 #lessText1, #lessText2, #lessText3{
   display: none;
+  border: none;
+  color: blue;
 }
 #service{
   border-radius: 90%;

@@ -29,7 +29,7 @@ $(document).ready(function () {
   });
 
   $("#moreText3").on("click", function(){
-    $("#more1").show();
+    $("#more3").show();
     $("#lessText3").show();
     $("#moreText3").hide();
   });

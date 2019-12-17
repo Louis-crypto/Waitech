@@ -1,19 +1,23 @@
 /* background slides */
 *{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 body{
   margin: 0;
 }
 .bg_slides{
-  /* display: none; */
+   display: none;
 }
 img{
   vertical-align: middle;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-.slideshow{
-  max-width: 1000px;
+.slideshow-container{
  position: relative;
  margin: auto;
 }
@@ -43,6 +47,11 @@ img{
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
 
 
 .fade {

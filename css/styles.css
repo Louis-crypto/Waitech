@@ -1,4 +1,7 @@
 /* about section styling */
+#about{
+  text-align: center;
+}
 #hotelView{
   border-radius: 90%;
 }
@@ -13,6 +16,11 @@
   bottom: 5px;
 }
 
+.icon-bar a:hover {
+  color: deeppink;
+  background-color: beige;
+}
+
 .icon-bar a {
   display: inline;
   text-align: center;
@@ -20,4 +28,29 @@
   transition: all 0.3s ease;
   color: white;
   font-size: 20px;
+}
+
+.facebook {
+  color: white;
+  background-color:#3B5998;
+}
+
+.twitter {
+  color: white;
+  background-color: #55ACEE;
+}
+
+.google {
+  color: white;
+  background-color: #dd4b39;
+}
+
+.instagram {
+  color: white;
+  background-color: #125688;
+}
+
+.youtube {
+  color: white;
+  background-color:  #bb0000;
 }

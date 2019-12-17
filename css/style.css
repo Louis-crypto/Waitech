@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+
+}
+
+.bg-image{
+  background: url("img/pizza9.jpg");
+  height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo{
+	color: white;
+	background-color:rgba(0,0,0,0.5);
+	padding-left: 20px;
+	position: fixed;
+	font-family: 'Fugaz One', cursive;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    top: 0;
+    width: 100%
+}
+.style-p{
+	color:blue;
+	font-size: 100px;
+	font-family: 'Lobster', cursive;
+	 text-shadow: 2px 2px #4d0980;
+}
+.showcase{
+	color: white;
+	font-family: 'Fugaz One', cursive;
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    text-align: center;
+    background-color:rgba(0,0,0,0.7);
+    padding-top: 300px;
+    padding-bottom: 100px;
+}
+section{
+	padding-top: 50px;
+	text-align: center;
+    font-family: 'Lobster', cursive;
+    font-family: 'Bad Script', cursive;
+	font-size: 20px;
+	margin: 30px;
+
+}
+section h1{
+	padding-bottom: 20px;
+
+}
+
+
+.col-md-4{
+	text-align: center;
+
+}
+option{
+	width: 200px;
+	font-weight: bolder;
+	padding-top: 50px;
+}
+
+#placeOrder{
+	background-color: rgb(77,9,128);
+	border-radius:30px;
+	width: 250px;
+	height: 30px;
+	color: white;
+	font-weight: bolder;
+
+}
+
+.placeOrder {
+	padding-bottom: 100px;
+}
+
+.social-icons{
+	text-align: center;
+	padding-top: 10px;
+}
+.#details{
+	padding-bottom: 20px;
+}
+
+footer{
+	font-weight: bolder;
+	color: black;
+	background-attachment: fixed;
+	margin: 0;
+	padding-top: 30px;
+  
+}
+#designed{
+	font-size: 13px;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    font-size: 10px;
+  }
+   p{
+    font-family: 'Girassol', cursive;
+    font-family: 'Courier Prime', monospace;
+ }
+ .showcase img{
+   background-attachment:fixed;
+ }
+ .showcase{
+ 	font-size: 40px;
+ }
+ html, body {
+    overflow-x: hidden;
+}
+ 
+}

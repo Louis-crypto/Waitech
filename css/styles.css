@@ -9,3 +9,18 @@ body{
   background-size: cover;
   background-attachment: fixed;
 }
+#menu_select{
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  color: white;
+  margin-left: 50%;
+  margin-top: 50px;
+  width:200px;
+  font-size: 24px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: white;
+  cursor: pointer;
+}

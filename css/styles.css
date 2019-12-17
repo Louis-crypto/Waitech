@@ -5,6 +5,9 @@
 #hotelView{
   border-radius: 90%;
 }
+#more1, #more2, #more3{
+  display: none;
+}
 #service{
   border-radius: 90%;
 }

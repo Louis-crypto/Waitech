@@ -3,18 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+html{
   background: url("../images/home1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 #menu_select{
   align-items: center;
   text-align: center;
   background: transparent;
   color: white;
-  margin-left: 50%;
+  margin-left: 44%;
   margin-top: 50px;
   width:200px;
   font-size: 24px;
@@ -23,4 +23,18 @@ body{
   border-right: none;
   border-color: white;
   cursor: pointer;
+}
+
+.about{
+  background: rgba(0,0,0,0.6);
+}
+
+.head{
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1{
+  color: white;
+  font-size: 30px;
 }

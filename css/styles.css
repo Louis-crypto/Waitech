@@ -104,3 +104,261 @@
   color: white;
   background-color:  #bb0000;
 }
+.bubble_container{
+  padding-left: 53%;
+}
+.circle:nth-child(1),
+.circle:nth-child(2),
+.circle:nth-child(3),
+.circle:nth-child(4){
+    width:10px;
+    height:10px;
+    background:black;
+    display:inline-block;
+    border-radius:2em;
+    animation: PopUp 0.9s  infinite alternate ;
+}
+.circle:nth-child(1){
+    background:orangered ;
+}
+.circle:nth-child(2){
+    background:blueviolet;
+    animation-delay:.15s;
+}
+.circle:nth-child(3){
+    background:yellow;
+    animation-delay: .25s;
+}
+.circle:nth-child(4){
+    background:purple;
+    animation-delay: .35s;
+}
+
+@keyframes PopUp{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+         transform: translate(-155px);
+    }
+    100%{
+           transform: translate(0px);
+    }
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: url("../images/home1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+#menu_select{
+  align-items: center;
+  text-align: center;
+  background: transparent;
+  color: white;
+  margin-left: 44%;
+  margin-top: 50px;
+  width:200px;
+  font-size: 24px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: white;
+  cursor: pointer;
+  margin-bottom: 30px;
+
+}
+
+.head{
+  margin-top: 3%;
+  text-align: center;
+}
+
+h1{
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.imgSlides {
+  display: none
+}
+
+  img {
+  vertical-align: middle;
+  }
+
+
+.slideshow{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  opacity: 0.9;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.left{
+  left:0;
+  border-radius: 3px 0 0 3px;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.col-md-4{
+	text-align: center;
+	padding-top: 20px;
+	padding-left: 30px;
+	column-gap: 40px;
+	display: flex;
+}
+.box h1{
+	text-align: center;
+  color: black;
+}
+.scroll-box{
+background-color: white;
+border:solid 2px black;
+padding: 5px;
+font: 18px sans-serif;
+margin: 30px;
+padding-right: 50px;
+height: 400px;
+overflow: scroll;
+padding-top: 50px;
+font-family: 'Noto Serif', serif;
+font-family: 'Lobster', cursive;
+}
+.scroll-box1{
+border:solid 2px black;
+color: rgb(139,0,255);
+border-radius: 20px;
+display: inline-flex;
+padding: 5px;
+text-align: center;
+font: 18px;
+width: 400px;
+height: 300px;
+overflow: scroll;
+font-family: 'Noto Serif', serif;
+font-family: 'Lobster', cursive;
+}
+.scrol-box1 input{
+  text-align: center;
+}
+.scroll-box2{
+border:solid 2px black;
+color: rgb(139,0,255);
+border-radius: 20px;
+padding: 5px;
+font: 18px sans-serif;
+width: 400px;
+height: 300px;
+overflow: scroll;
+font-family: 'Noto Serif', serif;
+font-family: 'Lobster', cursive;
+}
+
+.scroll-box3{
+border:solid 2px black;
+color: rgb(139,0,255);
+border-radius: 20px;
+
+font: 18px sans-serif;
+width: 400px;
+height: 300px;
+padding-left: 20px;
+overflow: scroll;
+font-family: 'Noto Serif', serif;
+font-family: 'Lobster', cursive;
+}
+input {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+form input {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: underline;
+}
+ input:hover {
+  background-color: rgb(77,0,255);
+  color: white;
+  font-family: 'Noto Serif', serif;
+  font-family: 'Lobster', cursive;
+}
+#submit input{
+	border-radius: 20px;
+	text-align: center;
+    background-color: rgb(77,0,255);
+     font-weight: bolder;
+}

@@ -44,5 +44,9 @@ $(document).ready(function () {
     var userName = document.getElementById("name").value;
     alert(userName + " " + "we have received your message, thank you for your feedback");
   });
+  
+  $("#menu_select").click(function(){
+    $("#lorem").toggle();
+  });
 
 });

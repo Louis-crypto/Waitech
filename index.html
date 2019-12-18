@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Noto+Serif&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
   <link rel="icon" type="image/jpg" href="images/wticon1.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
@@ -13,80 +13,144 @@
 </head>
 
 <body>
-  <div class="container">
-    <!-- louis about section -->
-    <div id="about">
-      <h1>ABOUT US</h1>
-      <div class="row">
-        <div class="col-md-4" id="wedo">
-          <img width="250px" src="images/about1.jpeg" alt="our hotels" id="hotelView">
-          <p>
-            <b>WHAT WE DO</b><br>
-            we offer the best meals in town, lunch, dinner or breakfast served as you like in an african way<br>
-            <span id="more1">Baraka cafe is a world class five star hotel located in Nairobi CBD opposite Nairobi
-              cinema,<br>
-              the cafe offers world class meals, spacious accomodation rooms, conference halls and<br>
-              meeting rooms<br></span>
-          </p>
-          <button id="moreText1">Read more</button>
-          <button id="lessText1">Read less</button>
-        </div>
+  <div class="head">
+    <img src="images/cafe.png" alt="">
+    <h1>Baraka Cafe</h1>
+  </div>
+  <div class="bubble">
+    <button type="button" name="button" id="menu_select">Select Menu</button>
+    <div class="bubble_container">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="panel1"></div>
+    </div>
+  </div>
 
-        <div class="col-md-4" id="services">
-          <img width="250px" src="images/about2.jpeg" alt="our services" id="service">
-          <p>
-            <b>OUR SERVICES</b><br>
-            At Baraka we value our customers that is why we provide world-class services for you<br>
-            <span id="more2">We have professional staff who are always willing<br> to make you enjoy your time at Baraka
-              cafe,<br>
-              we also provide delivery services to customers who wish to have their food delivered to any
-              destination<br>
-              within Nairobi CBD.</span>
-          </p>
-          <button id="moreText2">Read more</button>
-          <button id="lessText2">Read less</button>
-        </div>
-        <div class="col-md-4" id="faculty">
-          <img width="250px" src="images/about3.jpeg" alt="our staff" id="staff">
-          <p>
-            <b>OUR STAFF</b><br>
-            We are a team that works together towards a common goal which is to make you smile,<br>
-            <span id="more3">our staff are qualified and excellent at their work they provide the best services for
-              you.<br>
-              For comments o compliments about our staff kindly give us feedback on the feedback form below<br>
-              we value and appreciate your feedback.<br></span>
-          </p>
-          <button id="moreText3">Read more</button>
-          <button id="lessText3">Read less</button>
+  <div class="container1">
+    <div class="box">
+      <div class="scroll-box">
+        <h1>Our menu</h1>
+        <div class="col-md-4">
+          <div class="scroll-box3">
+            <div class="card">
+              <img src="images/br1.webp" height="200px" width="200px">
+              <h1>Breakfast</h1>
+              <form>
+                <input type="checkbox" value="200">Porridge....Ksh 200<br>
+                <input type="checkbox" value="400">Classic Muesli...Ksh 400<br>
+                <input type="checkbox" value="500">Butter MIlk.....Ksh 500<br><br>
+                <input type="checkbox" value="800">French Toast...Ksh 800<br>
+                <input type="checkbox" value="600">Morning Booster...Ksh 600<br>
+                <input type="checkbox" value="200">French fruits....Ksh 200<br><br>
+                <input type="submit" value="Submit" id="submit">
+              </form>
+            </div>
+          </div>
+          <div class="scroll-box2">
+            <div class="card">
+              <img src="images/dinner.jpg" height="200px" width="200px">
+              <h1>Lunch/Dinner</h1>
+              <form>
+                <input type="checkbox" value="200">Porridge....Ksh 200<br>
+                <input type="checkbox" value="400">Classic Muesli...Ksh 400<br>
+                <input type="checkbox" value="500">Butter MIlk.....Ksh 500<br><br>
+                <input type="checkbox" value="800">French Toast...Ksh 800<br>
+                <input type="checkbox" value="600">Morning Booster...Ksh 600<br>
+                <input type="checkbox" value="200">French fruits....Ksh 200<br><br>
+                <input type="submit" value="Submit" id="submit">
+              </form>
+            </div>
+          </div>
+          <div class="scroll-box1">
+            <div class="card">
+              <img src="images/dinner.jpg" height="200px" width="200px">
+              <h1>Drinks</h1>
+              <form>
+                <input type="checkbox" value="200">Porridge....Ksh 200<br>
+                <input type="checkbox" value="400">Classic Muesli...Ksh 400<br>
+                <input type="checkbox" value="500">Butter MIlk.....Ksh 500<br><br>
+                <input type="checkbox" value="800">French Toast...Ksh 800<br>
+                <input type="checkbox" value="600">Morning Booster...Ksh 600<br>
+                <input type="checkbox" value="200">French fruits....Ksh 200<br><br>
+                <input type="submit" value="Submit" id="submit">
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <input type="checkbox" name="vehicle1" value="100"> I have a bike<br>
-    <input type="checkbox" name="vehicle2" value="200"> I have a car<br>
-    <input type="checkbox" name="vehicle3" value="300"> I have a boat<br>
-
-    <footer>
-      <div id="contacts">
-        <h2>CONTACT US</h2>
-        <form>
-          <input type="text" placeholder="NAME..." name="NAME" id="name">
-          <input type="email" placeholder="Email..." name="EMAIL" id="email">
-          <input type="text" placeholder="Your feedback" name="MESSAGE" id="message">
-          <div class="clear"><input type="submit" value="Submit" name="submit" id="submit" class="button"></div>
-        </form>
-        <div class="icon-bar">
-          <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
-          <a href="https://twitter.com/login?lang=en" class="twitter"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.google.com/" class="google"><i class="fa fa-google"></i></a>
-          <a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a>
-          <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
-        </div>
-      </div>
-    </footer>
   </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+  <!-- louis about section -->
+  <div id="about">
+    <h1>ABOUT US</h1>
+    <div class="row">
+      <div class="col-md-4" id="wedo">
+        <img width="250px" src="images/about1.jpeg" alt="our hotels" id="hotelView">
+        <p>
+          <b>WHAT WE DO</b><br>
+          we offer the best meals in town, lunch, dinner or breakfast served as you like in an african way<br>
+          <span id="more1">Baraka cafe is a world class five star hotel located in Nairobi CBD opposite Nairobi
+            cinema,<br>
+            the cafe offers world class meals, spacious accomodation rooms, conference halls and<br>
+            meeting rooms<br></span>
+        </p>
+        <button id="moreText1">Read more</button>
+        <button id="lessText1">Read less</button>
+      </div>
+
+      <div class="col-md-4" id="services">
+        <img width="250px" src="images/about2.jpeg" alt="our services" id="service">
+        <p>
+          <b>OUR SERVICES</b><br>
+          At Baraka we value our customers that is why we provide world-class services for you<br>
+          <span id="more2">We have professional staff who are always willing<br> to make you enjoy your time at Baraka
+            cafe,<br>
+            we also provide delivery services to customers who wish to have their food delivered to any destination<br>
+            within Nairobi CBD.</span>
+        </p>
+        <button id="moreText2">Read more</button>
+        <button id="lessText2">Read less</button>
+      </div>
+      <div class="col-md-4" id="faculty">
+        <img width="250px" src="images/about3.jpeg" alt="our staff" id="staff">
+        <p>
+          <b>OUR STAFF</b><br>
+          We are a team that works together towards a common goal which is to make you smile,<br>
+          <span id="more3">our staff are qualified and excellent at their work they provide the best services for
+            you.<br>
+            For comments o compliments about our staff kindly give us feedback on the feedback form below<br>
+            we value and appreciate your feedback.<br></span>
+        </p>
+        <button id="moreText3">Read more</button>
+        <button id="lessText3">Read less</button>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div id="contacts">
+      <h2>CONTACT US</h2>
+      <form>
+        <input type="text" placeholder="NAME..." name="NAME" id="name">
+        <input type="email" placeholder="Email..." name="EMAIL" id="email">
+        <input type="text" placeholder="Your feedback" name="MESSAGE" id="message">
+        <div class="clear"><input type="submit" value="Submit" name="submit" id="submit" class="button"></div>
+      </form>
+      <div class="icon-bar">
+        <a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/login?lang=en" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.google.com/" class="google"><i class="fa fa-google"></i></a>
+        <a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
   <script src="js/scripts.js"></script>
 </body>
 

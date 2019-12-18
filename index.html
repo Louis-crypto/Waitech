@@ -1,20 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" type="image/jpg" href="images/wticon1.jpg">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Noto+Serif&display=swap" rel="stylesheet">
+   	<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="images/wticon1.jpg">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <title>Waitech</title>
-</head>
+  </head>
+  <body>
+    <div class="head">
+      <img src="images/cafe.png" alt="">
+      <h1>Baraka Cafe</h1>
+    </div>
+    <div class="bubble">
+      <button type="button" name="button" id="menu_select">Select Menu</button>
+      <div class="bubble_container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="panel1"></div>
+    </div>
+    </div>
 
-<body>
-  <div class="container">
-    <!-- louis about section -->
+    <div class="container">
+  	 <div class="box">
+		 <div class="scroll-box">
+		 	<h1>Our menu</h1>
+		   <div class="col-md-4">
+			 <div class="scroll-box3">
+			   <div class="card">
+				<img src="images/br1.webp" height="200px" width="200px">
+        <h1>Breakfast</h1>
+				<form>
+				<input type="checkbox"  value="200">Porridge....Ksh 200<br>
+                <input type="checkbox"  value="400">Classic Muesli...Ksh 400<br>
+                <input type="checkbox"  value="500">Butter MIlk.....Ksh 500<br><br>
+                <input type="checkbox"  value="800">French Toast...Ksh 800<br>
+                <input type="checkbox"  value="600">Morning Booster...Ksh 600<br>
+                <input type="checkbox" value="200">French fruits....Ksh 200<br><br>
+                <input type="submit" value="Submit" id="submit">
+				</form>
+		  </div>
+		</div>
+		  <div class="scroll-box2">
+			<div class="card">
+				<img src="images/dinner.jpg" height="200px" width="200px">
+				<h1>Lunch/Dinner</h1>
+				<form>
+				<input type="checkbox"  value="200">Porridge....Ksh 200<br>
+                <input type="checkbox"  value="400">Classic Muesli...Ksh 400<br>
+                <input type="checkbox"  value="500">Butter MIlk.....Ksh 500<br><br>
+                <input type="checkbox"  value="800">French Toast...Ksh 800<br>
+                <input type="checkbox"  value="600">Morning Booster...Ksh 600<br>
+                <input type="checkbox" value="200">French fruits....Ksh 200<br><br>
+                <input type="submit" value="Submit" id="submit">
+				</form>
+		  </div>
+		  </div>
+		   <div class="scroll-box1">
+			<div class="card">
+				<img src="images/dinner.jpg" height="200px" width="200px">
+				<h1>Drinks</h1>
+				<form>
+				<input type="checkbox"  value="200">Porridge....Ksh 200<br>
+                <input type="checkbox"  value="400">Classic Muesli...Ksh 400<br>
+                <input type="checkbox"  value="500">Butter MIlk.....Ksh 500<br><br>
+                <input type="checkbox"  value="800">French Toast...Ksh 800<br>
+                <input type="checkbox"  value="600">Morning Booster...Ksh 600<br>
+                <input type="checkbox" value="200">French fruits....Ksh 200<br><br>
+                <input type="submit" value="Submit" id="submit">
+				</form>
+		  </div>
+		</div>
+	   </div>
+	 </div>
+	</div>
+  </div>
+  
+   <!-- louis about section -->
     <div id="about">
       <h1>ABOUT US</h1>
       <div class="row">
@@ -75,10 +142,52 @@
         </div>
       </div>
     </footer>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="js/scripts.js"></script>
-</body>
 
+
+
+
+
+  <!-- <div class="slideshow">
+
+    <div class="imgSlides fade">
+      <img src="images/coffee.jpg" width="100%" height="100%">
+      <div class="text">Try out our signature Mocca coffee.</div>
+    </div>
+
+    <div class="imgSlides fade">
+      <img src="images/cake.jpg" width="100%" height="100%" >
+      <div class="text">Fancy a Cake?</div>
+    </div>
+
+    <div class="imgSlides fade">
+      <img src="images/fries.jpg" width="100%" height="100%">
+      <div class="text">Or some fries</div>
+    </div>
+
+    <div class="imgSlides fade">
+      <img src="images/cocktail.jpg" width="100%" width="100%">
+      <div class="text">How about a cocktail</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br> -->
+
+  <!-- <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+
+  </div> -->
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+
+    <script src="js/scripts.js"></script>
+</body>
 </html>

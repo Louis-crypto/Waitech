@@ -1,3 +1,44 @@
+.container{
+  padding-left: 53%;
+}
+.circle:nth-child(1),
+.circle:nth-child(2),
+.circle:nth-child(3),
+.circle:nth-child(4){
+    width:10px;
+    height:10px;
+    background:black;
+    display:inline-block;
+    border-radius:2em;
+    animation: PopUp 0.9s  infinite alternate ;
+}
+.circle:nth-child(1){
+    background:orangered ;
+}
+.circle:nth-child(2){
+    background:blueviolet;
+    animation-delay:.15s;
+}
+.circle:nth-child(3){
+    background:yellow;
+    animation-delay: .25s;
+}
+.circle:nth-child(4){
+    background:purple;
+    animation-delay: .35s;
+}
+
+@keyframes PopUp{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+         transform: translate(-155px);
+    }
+    100%{
+           transform: translate(0px);
+    }
+}
 *{
   margin: 0;
   padding: 0;
@@ -23,10 +64,7 @@ html{
   border-right: none;
   border-color: white;
   cursor: pointer;
-}
-
-.about{
-  background: rgba(0,0,0,0.6);
+  margin-bottom: 30px;
 }
 
 .head{
@@ -36,5 +74,91 @@ html{
 
 h1{
   color: white;
-  font-size: 30px;
+  font-size: 50px;
+}
+
+.imgSlides {
+  display: none
+}
+
+  img {
+  vertical-align: middle;
+  }
+
+
+.slideshow{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  opacity: 0.9;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.left{
+  left:0;
+  border-radius: 3px 0 0 3px;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }

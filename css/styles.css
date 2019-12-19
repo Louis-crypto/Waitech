@@ -1,35 +1,49 @@
 /* about section styling */
-#about{
+#about {
   text-align: center;
   color: white;
 }
-#hotelView{
+
+#hotelView {
   border-radius: 90%;
 }
-#more1, #more2, #more3{
+
+#more1,
+#more2,
+#more3 {
   display: none;
 }
-#moreText1, #moreText2, #moreText3{
+
+#moreText1,
+#moreText2,
+#moreText3 {
   border: none;
   color: blue;
 }
-#lessText1, #lessText2, #lessText3{
+
+#lessText1,
+#lessText2,
+#lessText3 {
   display: none;
   border: none;
   color: blue;
 }
-#service{
+
+#service {
   border-radius: 90%;
 }
-#staff{
+
+#staff {
   border-radius: 90%;
 }
+
 /* contacts section styling */
-#contacts{
+#contacts {
   text-align: center;
   margin-top: 6%;
 }
-#name{
+
+#name {
   background: none;
   width: 25%;
   outline: 0;
@@ -38,7 +52,8 @@
   color: white;
   font-size: 18px;
 }
-#email{
+
+#email {
   background: none;
   width: 25%;
   outline: 0;
@@ -46,9 +61,10 @@
   border: 1px solid white;
   color: white;
   font-size: 18px;
-  
+
 }
-#message{
+
+#message {
   background: none;
   width: 52%;
   outline: 0;
@@ -58,7 +74,8 @@
   color: white;
   font-size: 18px;
 }
-::placeholder{
+
+::placeholder {
   color: white;
   font-size: 18px;
 }
@@ -83,7 +100,7 @@
 
 .facebook {
   color: white;
-  background-color:#3B5998;
+  background-color: #3B5998;
 }
 
 .twitter {
@@ -103,66 +120,75 @@
 
 .youtube {
   color: white;
-  background-color:  #bb0000;
+  background-color: #bb0000;
 }
 
 /* //bubble effect// */
-.bubble_container{
+.bubble_container {
   padding-left: 53%;
 }
+
 .circle:nth-child(1),
 .circle:nth-child(2),
 .circle:nth-child(3),
-.circle:nth-child(4){
-    width:10px;
-    height:10px;
-    background:black;
-    display:inline-block;
-    border-radius:2em;
-    animation: PopUp 0.9s  infinite alternate ;
-}
-.circle:nth-child(1){
-    background:orangered ;
-}
-.circle:nth-child(2){
-    background:blueviolet;
-    animation-delay:.15s;
-}
-.circle:nth-child(3){
-    background:yellow;
-    animation-delay: .25s;
-}
-.circle:nth-child(4){
-    background:purple;
-    animation-delay: .35s;
+.circle:nth-child(4) {
+  width: 10px;
+  height: 10px;
+  background: black;
+  display: inline-block;
+  border-radius: 2em;
+  animation: PopUp 0.9s infinite alternate;
 }
 
-@keyframes PopUp{
-    0%{
-        transform: translate(0px);
-    }
-    50%{
-         transform: translate(-155px);
-    }
-    100%{
-           transform: translate(0px);
-    }
+.circle:nth-child(1) {
+  background: orangered;
 }
-body{
+
+.circle:nth-child(2) {
+  background: blueviolet;
+  animation-delay: .15s;
+}
+
+.circle:nth-child(3) {
+  background: yellow;
+  animation-delay: .25s;
+}
+
+.circle:nth-child(4) {
+  background: purple;
+  animation-delay: .35s;
+}
+
+@keyframes PopUp {
+  0% {
+    transform: translate(0px);
+  }
+
+  50% {
+    transform: translate(-155px);
+  }
+
+  100% {
+    transform: translate(0px);
+  }
+}
+
+body {
   background: url("../images/home1.jpg");
   /* background-repeat: no-repeat; */
   background-size: cover;
   /* background-attachment: scroll; */
   overflow-x: hidden;
 }
-#menu_select{
+
+#menu_select {
   align-items: center;
   text-align: center;
   background: transparent;
   color: white;
   margin-left: 44%;
   margin-top: 50px;
-  width:200px;
+  width: 200px;
   font-size: 24px;
   border-top: none;
   border-left: none;
@@ -173,12 +199,13 @@ body{
 
 }
 
-.head{
+.head {
   margin-top: 3%;
   text-align: center;
+  font-family: 'Inria Serif', serif;
 }
 
-h1{
+h1 {
   color: white;
   font-size: 50px;
   text-align: center;
@@ -187,28 +214,54 @@ h1{
 
 /* menu styling */
 
-.container1{
+.container1 {
   width: 90%;
   background-color: white;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255, 255, 255, 0.8);
   text-align: center;
-  /* display: none; */
+  display: none;
   margin-left: 5%;
+  font-family: 'Inria Serif', serif;
+
 }
-form{
+#input{
+  font-weight: bolder;
+
+  font-size: 20px;
+}
+
+#received {
+  display: none;
+  font-size: 20px;
+  font-weight:bolder;
+  padding-bottom: 50px;
+  padding-top: 50px;
+
+}
+
+form {
   text-align: left;
   margin-left: 30%;
 }
-#cancel{
-  float:right;
+
+#cancel {
+  float: right;
 }
-#ourMenu{
+
+#ourMenu {
   color: black;
   text-decoration: underline;
+  font-size: 20px;
 }
-#drinks{
+
+#drinks {
   color: black;
 }
-#contactUs{
+
+.table {
+  width: 20%;
+}
+
+#contactUs {
   color: white;
 }

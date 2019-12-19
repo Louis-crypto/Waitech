@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" type="image/jpg" href="images/wticon1.jpg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Inria+Serif&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
   <title>Waitech</title>
@@ -27,50 +28,70 @@
   </div>
 
   <div class="container1">
-        <img width="50px" id="cancel" src="images/cancel.png">
-        <h1 id="ourMenu">Our menu</h1>
-        <div class="row">
-            <div class="col-md-4">
-              <img src="images/br1.webp" height="200px" width="200px">
-              <h1 id="drinks">Breakfast</h1>
-              <form>
-                <input type="checkbox" value="200">Porridge....Ksh 200<br>
-                <input type="checkbox" value="400">Classic Muesli...Ksh 400<br>
-                <input type="checkbox" value="500">Butter MIlk.....Ksh 500<br><br>
-                <input type="checkbox" value="800">French Toast...Ksh 800<br>
-                <input type="checkbox" value="600">Morning Booster...Ksh 600<br>
-                <input type="checkbox" value="200">French fruits....Ksh 200<br><br>
-                
-              </form>
-            </div>
-            <div class="col-md-4">
-              <img src="images/dinner.jpg" height="200px" width="200px">
-              <h1 id="drinks"`>Lunch/Dinner</h1>
-              <form>
-                <input type="checkbox" value="200">Porridge....Ksh 200<br>
-                <input type="checkbox" value="400">Classic Muesli...Ksh 400<br>
-                <input type="checkbox" value="500">Butter MIlk.....Ksh 500<br><br>
-                <input type="checkbox" value="800">French Toast...Ksh 800<br>
-                <input type="checkbox" value="600">Morning Booster...Ksh 600<br>
-                <input type="checkbox" value="200">French fruits....Ksh 200<br><br>
-               
-              </form>
-            </div>
-            <div class="col-md-4">
-              <img src="images/dinner.jpg" height="200px" width="200px">
-              <h1 id="drinks">Drinks</h1>
-              <form>
-                <input type="checkbox" value="200">Porridge....Ksh 200<br>
-                <input type="checkbox" value="400">Classic Muesli...Ksh 400<br>
-                <input type="checkbox" value="500">Butter MIlk.....Ksh 500<br><br>
-                <input type="checkbox" value="800">French Toast...Ksh 800<br>
-                <input type="checkbox" value="600">Morning Booster...Ksh 600<br>
-                <input type="checkbox" value="200">French fruits....Ksh 200<br><br>
-                
-              </form>
-            </div>
-          </div>
+    <img width="50px" id="cancel" src="images/cancel.png">
+    <h1 id="ourMenu">Our menu</h1>
+
+    <div class="row">
+      <div class="col-md-4">
+        <img src="images/br1.webp" height="200px" width="200px">
+        <h1 id="drinks">Breakfast</h1>
+        <form id="input">
+          <input type="checkbox" class="breakfast" name="Porridge" id="checkbox_1" value="200"
+            onchange="getName();">Porridge....Ksh 200<br>
+          <input type="checkbox" class="breakfast" name="Classic Muesli" id="checkbox_2" value="400"
+            onchange="getName();">Classic Muesli...Ksh 400<br>
+          <input type="checkbox" class="breakfast" name="Butter Milk" id="checkbox_3" value="500"
+            onchange="getName();">Butter Milk.....Ksh 500<br><br>
+          <input type="checkbox" class="breakfast" name="French Toast" id="checkbox_4" value="800"
+            onchange="getName();">French Toast...Ksh 800<br>
+          <input type="checkbox" class="breakfast" name="Morning Booster" id="checkbox_5" value="600"
+            onchange="getName();">Morning Booster...Ksh 600<br>
+          <input type="checkbox" class="breakfast" name="French fruits" id="checkbox_6" value="200"
+            onchange="getName();">French fruits....Ksh 200<br><br>
+
+        </form>
+      </div>
+      <div class="col-md-4">
+        <img src="images/dinner.jpg" height="200px" width="200px">
+        <h1 id="drinks" `>Lunch/Dinner</h1>
+        <form id="input">
+          <input type="checkbox" value="200">Porridge....Ksh 200<br>
+          <input type="checkbox" value="400">Classic Muesli...Ksh 400<br>
+          <input type="checkbox" value="500">Butter MIlk.....Ksh 500<br><br>
+          <input type="checkbox" value="800">French Toast...Ksh 800<br>
+          <input type="checkbox" value="600">Morning Booster...Ksh 600<br>
+          <input type="checkbox" value="200">French fruits....Ksh 200<br><br>
+
+        </form>
+      </div>
+      <div class="col-md-4">
+        <img src="images/dinner.jpg" height="200px" width="200px">
+        <h1 id="drinks">Drinks</h1>
+        <form id="input">
+          <input type="checkbox" value="200">Porridge....Ksh 200<br>
+          <input type="checkbox" value="400">Classic Muesli...Ksh 400<br>
+          <input type="checkbox" value="500">Butter MIlk.....Ksh 500<br><br>
+          <input type="checkbox" value="800">French Toast...Ksh 800<br>
+          <input type="checkbox" value="600">Morning Booster...Ksh 600<br>
+          <input type="checkbox" value="200">French fruits....Ksh 200<br><br>
+
+        </form>
+      </div>
+    </div>
+
+    total Price<br><input id="price" type="text" readonly="readonly" />
+    <button id="chec">submit order</button><br>
+    <p id="received">We have received your order and its been processed...</p>
+
   </div>
+
+  <!-- <li><span id="checkboxConfirm_1"></span></li>
+  <li><span id="checkboxConfirm_2"></span></li>
+  <li><span id="checkboxConfirm_3"></span></li>
+  <li><span id="checkboxConfirm_4"></span></li>
+  <li><span id="checkboxConfirm_5"></span></li>
+  <li> <span id="checkboxConfirm_6"></span></li> -->
+
 
   <!-- louis about section -->
   <div id="about">

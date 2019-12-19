@@ -188,9 +188,19 @@ h1{
 /* menu styling */
 
 .container1{
-  width: 100%;
+  width: 90%;
   background-color: white;
+  background: rgba(255,255,255,0.8);
   text-align: center;
+  /* display: none; */
+  margin-left: 5%;
+}
+form{
+  text-align: left;
+  margin-left: 30%;
+}
+#cancel{
+  float:right;
 }
 #ourMenu{
   color: black;

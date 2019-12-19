@@ -40,13 +40,20 @@ $(document).ready(function () {
     $("#moreText3").show();
   });
 
+  $("#menu_select").on("click", function() {
+    $(".container1").show(5000);
+  });
+
+  $("#cancel").on("click", function(){
+    $(".container1").hide(3000);
+  })
+
   $("#submit").on("click", function () {
     var userName = document.getElementById("name").value;
     alert(userName + " " + "we have received your message, thank you for your feedback");
   });
   
-  $("#menu_select").click(function(){
-    $("#lorem").toggle();
-  });
-
 });
+ 
+
+ 
